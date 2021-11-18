@@ -1,0 +1,27 @@
+{
+
+  "description": "Automate the clicking of 'Skip Ads' button on YouTube",
+  "manifest_version": 2,
+  "name": "YouTube Ad Skipper",
+  "author": "Arun Kumar Prakash",
+  "developer": {
+	"name": "Arun Kumar Prakash",
+	"url": "https://github.com/UnrealArun2"
+  }
+  "version": "1.0",
+  "homepage_url": "https://github.com/UnrealArun2/yt-ad-skipper/tree/main",
+  "icons": {
+    "48": "icons/skipAd-48.png",
+	"96": "icons/skipAd-96.png"
+  },
+
+  "content_scripts": [
+    {
+	  "matches": ["*://*.youtube.com/*"],
+      "js": ["skipAd.js"],
+	  "run_at": "document_end",
+	  "all_frames": true
+    }
+  ]
+
+}
