@@ -4,10 +4,6 @@
   "manifest_version": 2,
   "name": "YouTube Ad Skipper",
   "author": "Arun Kumar Prakash",
-  "developer": {
-	"name": "Arun Kumar Prakash",
-	"url": "https://github.com/UnrealArun2"
-  },
   "version": "1.0",
   "homepage_url": "https://github.com/UnrealArun2/yt-ad-skipper/tree/main",
   "icons": {
