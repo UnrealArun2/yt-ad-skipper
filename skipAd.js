@@ -100,10 +100,14 @@ console.log("body element found");
 //<div class="video-ads ytp-ad-module" data-layer="4">
 var topLevelAdElement = document.getElementsByClassName("video-ads")[0];
 
-if (topLevelAdElement !== false) { // AD element already visible
+if (topLevelAdElement !== undefined) { // AD element already visible
+	console.log("detected toplevel ad element: ");
+	console.log(topLevelAdElement);
 	topElementObserver.observe(topLevelAdElement, topElementoptions);
 	console.log("started top element observer");
 } else {
+	console.log("detected body element: ");
+	console.log(bodyElement);
 	bodyObserver.observe(bodyElement, bodyOptions);
 	console.log("started body element observer");
 }
