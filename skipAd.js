@@ -29,7 +29,7 @@ function button_callback(mutatedElements, observer) {
 				// var curr_attr_value = mutation.target.getAttribute("style");
 				console.log("clicking:");
 				console.log(mutation.target);
-				var skipButton = mutation.target.getElementsByClassName("ytp-ad-skip-button ytp-button")[0];
+				var skipButton = mutation.target.getElementsByClassName("ytp-ad-skip-button-modern ytp-button")[0];
 				console.log(skipButton);
 				skipButton.click();
 			}
@@ -52,7 +52,7 @@ function callback(mutatedElements, observer) {
 				console.log(skipButtonElement);
 
 				if (skipButtonElement.style.cssText !== "display: none;") {
-					var skipButton = mutation.target.getElementsByClassName("ytp-ad-skip-button ytp-button")[0];
+					var skipButton = mutation.target.getElementsByClassName("ytp-ad-skip-button-modern ytp-button")[0];
 					console.log("clicking skip button:");
 					console.log(skipButton);
 					skipButton.click();
